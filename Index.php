@@ -4,146 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kislay Kumar - Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            color: #ffffff;
-            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            line-height: 1.6;
         }
         header {
-            text-align: center;
-            padding: 2rem 1rem;
-            background-color: #0f2027;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #0a192f;
         }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0;
-        }
-        nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        nav a {
+        header a {
             text-decoration: none;
-            color: #ffffff;
+            color: #64ffda;
             margin: 0 1rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
-        section {
-            padding: 2rem 1rem;
-            max-width: 800px;
-            margin: 0 auto;
+        header a:hover {
+            text-decoration: underline;
         }
-        section h2 {
+        .hero {
             text-align: center;
-            color: #00ffcc;
+            padding: 5rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #64ffda;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #8892b0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #64ffda;
+            border-bottom: 2px solid #64ffda;
+            display: inline-block;
             margin-bottom: 1rem;
         }
-        .skills, .achievements, .contact {
-            background: #1c2c34;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        .skills ul, .achievements ul {
+        ul {
             list-style: none;
             padding: 0;
         }
-        .skills li, .achievements li {
-            margin: 0.5rem 0;
-            color: #00ffcc;
+        ul li {
+            margin-bottom: 0.5rem;
         }
-        .contact a {
-            color: #00ffcc;
-            text-decoration: none;
+        ul li span {
+            color: #64ffda;
         }
         footer {
             text-align: center;
-            padding: 1rem;
-            background: #0f2027;
-        }
-        footer p {
+            padding: 2rem 1rem;
+            background-color: #0a192f;
+            color: #8892b0;
             font-size: 0.9rem;
-            margin: 0;
+        }
+        footer a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Kislay Kumar</h1>
-        <p>OSCP | Security Consultant | Penetration Tester | Bug Hunter</p>
-        <nav>
+        <div>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
-        </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a self-taught and passionate cybersecurity professional with extensive experience as a Penetration Tester and Ethical Hacker. My goal is to gain in-depth knowledge of cutting-edge technology while helping organizations secure their digital infrastructure.
-        </p>
+    <section class="hero">
+        <h1>Hi, I'm Kislay Kumar</h1>
+        <p>OSCP | Security Consultant | Penetration Tester | Synack Red Teamer</p>
     </section>
 
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Web Application Pentesting</li>
-            <li>Mobile Pentesting</li>
-            <li>Thick Client Pentesting</li>
-            <li>AS/400 Pentesting</li>
-            <li>Network Pentesting</li>
-            <li>Bug Hunting</li>
-            <li>Linux, Python, C++, JS</li>
-            <li>Tools: Nmap, BurpSuite, Nessus, Metasploit Framework</li>
-        </ul>
-    </section>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a self-taught and passionate cybersecurity professional with expertise in penetration testing, ethical hacking, and vulnerability assessment. My mission is to secure digital infrastructures by identifying and mitigating potential threats.
+            </p>
+        </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div>
-            <h3>Information Security Consultant - Firmus</h3>
-            <p>(02/2022 - Present, Kuala Lumpur)</p>
-            <p>Performing application security assessments and external red team engagements, along with project management and technical documentation.</p>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><span>Web Application Pentesting:</span> Expert in identifying and mitigating web vulnerabilities.</li>
+                <li><span>Mobile & Network Pentesting:</span> Comprehensive testing for Android, iOS, and network infrastructures.</li>
+                <li><span>Tools:</span> Nmap, BurpSuite, Nessus, Metasploit Framework, SQLmap.</li>
+                <li><span>Languages:</span> Python, C++, JavaScript, Linux Scripting.</li>
+            </ul>
+        </section>
 
-            <h3>Consultant (Cyber Security) - SkillCube India Pvt Ltd</h3>
-            <p>(01/2021 - 01/2022, Gurgaon)</p>
-            <p>Specialized in pentesting web, mobile, and API applications, along with AS/400 pentesting.</p>
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><span>Information Security Consultant - Firmus (2022 - Present):</span> Leading security assessments and red team engagements.</li>
+                <li><span>Consultant (Cyber Security) - SkillCube (2021 - 2022):</span> Specializing in web and mobile pentesting, including AS/400 systems.</li>
+                <li><span>Red Team Analyst - Cyber Sapiens United (2019 - 2021):</span> Conducted red team assessments and advanced vulnerability research.</li>
+            </ul>
+        </section>
 
-            <h3>Red Team Analyst - Cyber Sapiens United LLP</h3>
-            <p>(09/2019 - 01/2021, Mangalore)</p>
-            <p>Conducted red team assessments and researched vulnerabilities in websites, applications, and systems.</p>
-        </div>
-    </section>
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Published <span>6 Exploits</span> on Exploit-DB.</li>
+                <li>Earned <span>3 CVEs</span>: CVE-2020-35263, CVE-2020-36011, CVE-2020-36012.</li>
+                <li>Named one of the <span>Top 15 Security Researchers</span> by NCIIPC, India.</li>
+                <li>Recognition from major organizations like Apple, Dell, Intel, and Sony.</li>
+            </ul>
+        </section>
 
-    <section id="achievements" class="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>6 Exploits published on Exploit-DB</li>
-            <li>3 CVEs assigned: CVE-2020-35263, CVE-2020-36011, CVE-2020-36012</li>
-            <li>Top 15 Security Researchers by NCIIPC (Govt. of India)</li>
-            <li>Recognition by organizations like Apple, Dell, Intel, and Sony</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:kislaysingh00@gmail.com">kislaysingh00@gmail.com</a></p>
-        <p>Phone: <a href="tel:+601162182032">+601162182032</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/kislay00">linkedin.com/in/kislay00</a></p>
-    </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:kislaysingh00@gmail.com">kislaysingh00@gmail.com</a></p>
+            <p>Phone: <a href="tel:+601162182032">+601162182032</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/kislay00" target="_blank">linkedin.com/in/kislay00</a></p>
+        </section>
+    </div>
 
     <footer>
         <p>© 2024 Kislay Kumar | Cybersecurity Portfolio</p>
+        <p>Built with 💻 and passion for cybersecurity.</p>
     </footer>
 </body>
 </html>
